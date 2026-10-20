@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LASOMRA - GLOW Body Oil</title>
+  <style>
+    body { 
+      font-family: 'Arial', sans-serif; 
+      background-color: #fafafa; 
+      color: #333; 
+      margin: 0; 
+      padding: 0; 
+      text-align: center; 
+    }
+    .container { 
+      max-width: 450px; 
+      margin: 30px auto; 
+      background: white; 
+      padding: 30px 25px; 
+      border-radius: 12px; 
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.08); 
+    }
+    h1 { color: #000; letter-spacing: 3px; font-size: 32px; margin-bottom: 5px; text-transform: uppercase; }
+    h2 { color: #d4af37; font-size: 22px; margin-top: 0; text-transform: uppercase; }
+    
+    /* هادا هو الكود لي كيتحكم فالتصويرة */
+    .product-img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .desc { font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 20px; }
+    .scent { background-color: #fcfcfc; border: 1px dashed #d4af37; padding: 10px; font-weight: bold; color: #000; margin-bottom: 15px; }
+    .shipping { font-size: 14px; color: #d4af37; margin-bottom: 20px; font-weight: bold; }
+    
+    input, select { 
+      width: 100%; 
+      padding: 15px; 
+      margin: 12px 0; 
+      border: 1px solid #ddd; 
+      border-radius: 6px; 
+      box-sizing: border-box; 
+      font-size: 16px;
+      background-color: #fafafa;
+    }
+    input:focus, select:focus { border-color: #d4af37; outline: none; }
+    
+    .btn { 
+      background-color: #000; 
+      color: #d4af37; 
+      padding: 16px; 
+      font-size: 18px; 
+      font-weight: bold; 
+      border: none; 
+      border-radius: 6px; 
+      cursor: pointer; 
+      width: 100%; 
+      margin-top: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn:hover { background-color: #222; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>LASOMRA</h1>
+    <h2>Glow Body Oil</h2>
+    
+    <!-- هنا فين غتبان التصويرة ديالك لي سميتيها produit.jpg -->
+    <img src="produit.jpg" alt="Huile GLOW LASOMRA" class="product-img">
+    
+    <p class="desc">
+      Éclat naturel et hydratation profonde et luxueuse.<br>
+      Minutieusement fabriquée à base de Mica, d'Huile d'Amande Douce, d'Huile d'Argan et de Beurre de Karité.
+    </p>
+    
+    <p class="scent">
+      ✨ Parfum de pureté (Inspiré de Byredo Blanche)
+    </p>
+    
+    <p class="shipping">🚚 Livraison : 35 DH partout au Maroc</p>
+    
+    <form>
+      <select required>
+        <option value="">-- Choisissez la taille --</option>
+        <option value="50ml">Format 50 ml - à 119 DH</option>
+        <option value="100ml">Format 100 ml - à 199 DH</option>
+      </select>
+
+      <select required>
+        <option value="">-- Choisissez la couleur --</option>
+        <option value="gold">Doré (Gold)</option>
+        <option value="silver">Argenté (Silver)</option>
+        <option value="pink">Rose (Pink)</option>
+      </select>
+
+      <input type="text" placeholder="Nom complet" required>
+      <input type="tel" placeholder="Numéro de téléphone (ex: 0600000000)" required>
+      
+      <select required>
+        <option value="">-- Choisissez votre ville --</option>
+        <option value="casa">Casablanca</option>
+        <option value="rabat">Rabat</option>
+        <option value="tangier">Tanger</option>
+        <option value="marrakech">Marrakech</option>
+        <option value="agadir">Agadir</option>
+        <option value="fez">Fès</option>
+        <option value="other">Autre ville</option>
+      </select>
+
+      <button type="button" class="btn" onclick="alert('Votre commande a été enregistrée avec succès ! Nous vous contacterons bientôt.')">Confirmer la commande</button>
+    </form>
+  </div>
+
+</body>
+</html>
